@@ -1,4 +1,4 @@
-if exists("b:current_syntax")
+if exists('b:current_syntax')
     finish
 endif
 
@@ -14,4 +14,4 @@ highlight link todoIncomplete String
 highlight link todoLiteral Keyword
 highlight link todoURL Keyword
 
-let b:current_syntax = "todo"
+let b:current_syntax = 'todo'
