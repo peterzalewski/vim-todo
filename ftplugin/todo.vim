@@ -3,7 +3,5 @@ if exists('b:loaded_todo')
 endif
 let b:loaded_todo = 1
 
-augroup Todo
-    autocmd FileType todo setlocal commentstring=x\ %s
-    autocmd FileType todo :iabbrev <buffer> <expr> \t strftime("%Y-%m-%d")
-augroup END
+setlocal commentstring=x\ %s
+iabbrev <buffer> <expr> \t strftime("%Y-%m-%d")
